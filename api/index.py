@@ -4,7 +4,7 @@ from lib.text_to_speech import mp3_to_base64
 
 app = Flask(__name__)
 
-@app.route('/', methods=['POST'])
+@app.route('/')
 def home():
     data = request.get_json()
     my_text = data['text']
