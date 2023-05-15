@@ -10,7 +10,6 @@ def home():
     my_text = data['text']
     language = data['language']
     try:
-        print("Welcome")
         answer = ask_chatgpt(my_text)
         mp3 = mp3_to_base64(answer, language)
         return mp3
@@ -18,6 +17,13 @@ def home():
         print("Error asking ChatGPT", e)
     
 
-@app.route('/about')
+@app.route('/about', methods=['POST'])
 def about():
-    return 'About'
+    try:
+        data = request.get_json()
+        my_text = data['text']
+        language = data['language']
+        mp3 = mp3_to_base64(my_text, language)
+        return mp3
+    except Exception as e:
+        print("Error asking ChatGPT", e)
