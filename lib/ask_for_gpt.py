@@ -4,6 +4,7 @@ openai.api_key = "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"
 model_engine = "gpt-3.5-turbo" 
 
 def ask_chatgpt(question):
+    print(openai.api_key)
     try:
         response = openai.ChatCompletion.create(
             model='gpt-3.5-turbo',
