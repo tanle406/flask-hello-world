@@ -12,7 +12,9 @@ def home():
     try:
         answer = ask_chatgpt(my_text)
         mp3 = mp3_to_base64(answer, language)
-        return mp3
+        response = {"answer_text": answer,
+                    "answer_base64": mp3}
+        return response
     except Exception as e:
         print("Error asking ChatGPT", e)
     

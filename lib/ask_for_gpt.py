@@ -7,8 +7,6 @@ key_encode = "c2stc0hFdlU5bDZRTE02QUNIaVdIT1ZUM0JsYmtGSnh5TkVWMG1jWkE1YjExRlJUNj
 
 model_engine = "gpt-3.5-turbo" 
 
-print("1")
-
 def decode_key():
 
     decoded_bytes = base64.b64decode(key_encode)
@@ -16,9 +14,7 @@ def decode_key():
 
     return decoded_string[:-3]
 
-print("2")
 openai.api_key = decode_key()
-print("3")
 
 def ask_chatgpt(question):
     try:
