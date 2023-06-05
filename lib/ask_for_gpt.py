@@ -3,7 +3,7 @@ import base64
 
 
 
-key_encode = "c2stam1pcDdtTXFDSzF4cUtQd3M3OExUM0JsYmtGSnN1aTdFa3NYZmFWNmZISTJnYXl0dGFu"
+key_encode = "c2stRmJvbnVBNkZtM043OE0xRUx2UmlUM0JsYmtGSlFlbmhDTGpaV1F5d3FYS0dHcUxZdGFu"
 
 model_engine = "gpt-3.5-turbo" 
 
