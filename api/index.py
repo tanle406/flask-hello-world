@@ -29,3 +29,8 @@ def about():
         return mp3
     except Exception as e:
         print("Error asking ChatGPT", e)
+        
+
+
+if __name__ == '__main__':
+    app.run()
